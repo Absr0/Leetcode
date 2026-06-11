@@ -1,0 +1,10 @@
+test=int(input())
+for i in range(test):
+        n=int(input())
+        arr=list(map(int,input().split()))
+        neg=arr.count(-1)
+        zer=arr.count(0)
+        ops=zer
+        if neg%2==1:
+            ops+=2
+        print(ops)
